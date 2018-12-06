@@ -50,11 +50,25 @@
 				document.getElementById("second").innerHTML = '0';
 			}
 			function calc(){
-				alert('calc');
+				var result = 0;
+				var a = Number(document.getElementById("first").innerHTML);
+				var b = Number(document.getElementById("second").innerHTML);
+				
+				if(z == '+'){
+					result = a + b;
+				}
+				if(z == '-'){
+					result = a - b;
+				}
+				if(z == '*'){
+					result = a * b;
+				}
+				if(z == '/'){
+					result = a / b;
+				}
+				document.getElementById("answer").innerHTML = result;
 			}
-			// what javaScript will you need?
-			// create the shell of each function
-			// put an alert in each function to demonstrate that you are calling it
+			
 		</script>
 	</head>
 	<body>
